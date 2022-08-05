@@ -215,10 +215,33 @@ Puntos a considerar
   margin-top: 2rem;
 }
 
+/** Sobre Nosotros ---------------------------------- */
+/* Usando flexbox con gap 
+.sobre-nosotros{
+  display: flex;
+  gap: 2rem;
+}
+.sobre-nosotros__imagen,
+.sobre-nosotros__texto{
+  flex-basis: 50%;
+} */
 
+/* Usando flexbox sin gap
+.sobre-nosotros{
+  display: flex;
+  justify-content: space-between;
+}
+.sobre-nosotros__imagen,
+.sobre-nosotros__texto{
+  flex-basis: calc(50% - 1rem)
+} */
 
-
-
+/* Usando Grid */
+.sobre-nosotros{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
+}
 
 
 
