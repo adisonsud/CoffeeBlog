@@ -188,22 +188,27 @@ Puntos a considerar
   margin-bottom: 2rem;
    
 }
-.widget-curso:last-of-type{
+.widget-curso:last-of-type,
+.curso:last-of-type{
   border: none;
   margin-bottom: 0;
 }
-.widget-curso__label{
+.widget-curso__label,
+.curso__label{
   font-family: var(--fuenteHeading); /*impotante */
   font-weight: 700; /* tipo negrita */
 }
-.widget-curso__info{
+.widget-curso__info,
+.curso__info{
   font-weight: 400; /* tipo normal */
 }
 .boton--secundario{
   background: var(--primario);
 }
 .widget-curso__label,
-.widget-curso__info{
+.curso__label,
+.widget-curso__info,
+.curso__info{
   font-size: 2rem;
 }
 /* fin de sidebar de cursos e info ------------
@@ -242,7 +247,40 @@ Puntos a considerar
   grid-template-columns: repeat(2, 1fr);
   column-gap: 2rem;
 }
+/* fin de sobre Nosotros------------------- */
 
+.curso{
+  margin: 2rem 0;
+  padding: 3rem 0;
+  border-bottom: 1px solid var(--gris);
+}
+@media (min-width: 768px) {
+  .curso{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 2rem;
+  }
+}
+/* Losiguiente ya esta incluido en la parte superior 
+para evitar duplicar mismo codigo */
+/* .curso:last-of-type{
+  border: none;
+  margin-bottom: 0;
+}
+.curso__label{
+  font-family: var(--fuenteHeading); 
+  font-weight: 700; 
+}
+.curso__info{
+  font-weight: 400; 
+}
+.boton--secundario{
+  background: var(--primario);
+}
+.curso__label,
+.curso__info{
+  font-size: 2rem;
+} */
 
 
 
