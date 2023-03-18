@@ -8,49 +8,45 @@
     <!-- agregamos el normalize -->
     <link rel="stylesheet" href="css/normalize.css" />
     <!-- link de los tipos de fuente de google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <!-- agregamos style.css -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
+
   <body>
-    <!-- header Principal -->
-    <header class="header">
-      <!-- contenedor -->
-      <div class="contenedor">
-        <!-- barra -->
-        <div class="barra">
-          <!-- logo -->
-          <a class="logo" href="index.html">
+    <header class="header"><!-- header Principal -->
+      
+      <div class="contenedor"> <!-- contenedor -->
+        <div class="barra"><!-- barra superior-->
+          
+          <a class="logo" href="index.html"><!-- logo -->
             <h1 class="logo__nombre no-margin centrar-texto">Blog<span class="logo__bold">deCafé</span></h1>
           </a> <!-- fin de logo -->
-          <!-- navegacion -->
-          <nav class="navegacion">
+          
+          <nav class="navegacion"><!-- navegacion -->
             <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
             <a href="cursos.html" class="navegacion__enlace">Cursos</a>
             <a href="contacto.html" class="navegacion__enlace">Contacto</a>
-          </nav><!-- navegacion -->
-        </div> <!-- fin de barraSuperior -->
-      </div><!-- fin de contenedor -->
-      <!-- header textual -->
+          </nav><!-- fin navegacion -->
+
+        </div> <!-- fin barraSuperior -->
+      </div><!-- fin contenedor -->
+      
       <div class="header__texto">
         <h2 class="no-margin">Blog de café con consejos y cursos</h2>
         <p class="no-margin">Aprende de los expertos con las mejores recetas y consejos </p>
       </div> <!-- fin de header textual -->
     </header><!-- Fin header Principal -->
     
-    <!-- contenedor -->
+    <!-- contenedido Central -->
     <div class="contenedor contenido-principal">
-      <!-- blog -->
-      <main class="blog"> 
+      <main class="blog"> <!-- blog -->
+        
         <h3>Nuestro Blog</h3>
         
-        <!-- entrada 1-->
-        <article class="entrada">
+        <article class="entrada"><!-- entrada 1-->
           <div class="entrada__imagen">
             <img src="img/blog1.jpg" alt="Imagen Blog">  
           </div>
@@ -60,23 +56,22 @@
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem deleniti asperiores culpa autem iste esse cum ex eveniet? Dolorum, fugiat. Illo sapiente modi praesentium vel vero accusamus accusantium et numquam?</p> 
             <a href="entrada.html" class="boton boton--primario">Leer Entrada</a>
           </div>
-        </article> <!-- fin de entrada -->
+        </article> <!-- fin de entrada 1-->
         
-        <!-- entrada 2-->
-        <article class="entrada">
+      
+        <article class="entrada">  <!-- entrada 2-->
           <div class="entrada__imagen">
             <img src="img/blog2.jpg" alt="Imagen Blog">  
           </div>
           
           <div class="entrada__contenido">
-            <h4 class="no-margin">3 Deliciosasn Recetas de Café</h4>
+            <h4 class="no-margin">3 Deliciosas Recetas de Café</h4>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem deleniti asperiores culpa autem iste esse cum ex eveniet? Dolorum, fugiat. Illo sapiente modi praesentium vel vero accusamus accusantium et numquam?</p> 
             <a href="entrada.html" class="boton boton--primario">Leer Entrada</a>
           </div>
         </article> <!-- fin de entrada -->
-        
-        <!-- entrada 3-->
-        <article class="entrada">
+
+        <article class="entrada"> <!-- entrada 3-->
           <div class="entrada__imagen">
             <img src="img/blog3.jpg" alt="Imagen Blog">  
           </div>
@@ -89,13 +84,14 @@
         </article> <!-- fin de entrada -->
       </main> <!-- fin de blog -->
       
-      <!-- sidebar -->
-      <aside class="sidebar">
+      <aside class="sidebar"><!-- sidebar -->
+        
         <h3>Nuestros Cursos y Talleres</h3>
+
         <ul class="cursos no-padding">
+          
           <!-- Bloque del curso 1 -->
           <li class="widget-curso">
-            <!-- subtitulo -->
             <h4 class="no-margin">Técnicas de extracción de Café</h4>
             <!-- info -->
             <p class="widget-curso__label">Precio:
@@ -103,29 +99,28 @@
             </p>
             <p class="widget-curso__label">Cupo:
               <span class="widget-curso__info">20</span>
-            </p>
-            <!-- boton mayor info -->
+            </p> <!-- fin info -->
+            <!-- boton-->
             <a href="entrada.html" class="boton boton--secundario">Más Información</a>
           </li> <!-- fin del Bloque del curso 1 -->
           
           <!-- Bloque del curso 2 -->
           <li class="widget-curso">
-            <!-- subtitulo -->
-            <h4 class="no-margin">Técnicas de extracción de Café</h4>
+            <h4 class="no-margin">4 Recetas de cafe para principiantes</h4>
             <!-- info -->
             <p class="widget-curso__label">Precio:
               <span class="widget-curso__info">Gratis</span>
             </p>
             <p class="widget-curso__label">Cupo:
-              <span class="widget-curso__info">20</span>
-            </p>
-            <!-- boton mayor info -->
+              <span class="widget-curso__info">30</span>
+            </p> <!-- fin info -->
+            <!-- boton-->
             <a href="entrada.html" class="boton boton--secundario">Más Información</a>
           </li> <!-- fin del Bloque del curso 1 -->
           
         </ul>
       </aside><!-- fin de sidebar -->
-    </div><!-- fin de contenedor -->
+    </div><!-- fin de contenido central -->
     
     <!-- footer -->
     <footer class="footer">

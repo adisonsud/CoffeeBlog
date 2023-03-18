@@ -35,8 +35,7 @@ body{
   max-width: 120rem; /* recomendado */
   width: 90%; /* Recomendado no poner el contenedor al 100% */
   /* width: min(90%, 120rem); Nueva forma de hacer lo mismo de arriba */
-  margin: 0 auto; /* Top,Bottom = 0; left,right = auto con el 
-                  fin de que se centre correctamente */
+  margin: 0 auto; /* Top,Bottom = 0; left,right = auto con el fin de que se centre correctamente */
 }
 a {
   text-decoration: none;  /* quita todos los subrayados del enlace  */
@@ -71,26 +70,23 @@ img{
 .centrar-texto{
   text-align: center;  
 }
+
 /* Header------------------------------ */
 .header{
   background-image: url(../img/banner.jpg);
   height: 60rem;
   background-size: cover; /* Ayuda q se adapte la imagen a 
   diferentes tamaños */
-  background-repeat: no-repeat; 
-  background-position: center center; /* centrado Horizontal comovertical */  
+  background-repeat: no-repeat; /* la img no se repita */
+  background-position: center center; /* posicion  de enfoque q sera visible de la img 
+  al abrir en dispositivos mas pequeños - centra Horizontal y 
+  vertical la img*/  
 }
 
 .header__texto{
   text-align: center;
   color: var(--blanco);
-  margin-top: 5rem;
-}
-
-@media (min-width: 768px) {
-  .header__texto{
-    margin-top: 15rem;
-  }
+  margin-top: 5rem;/* margin hacia a arriba */
 }
 
 /* Barra---------------------------------- */
@@ -103,6 +99,10 @@ img{
   .barra{
     display: flex;
     justify-content: space-between;
+  }
+
+  .header__texto{
+    margin-top: 15rem;
   }
 }
 
@@ -131,8 +131,8 @@ img{
     
 }
 .navegacion__enlace{
-  display: block;
-  text-align: center;
+  display: block; /* un elemento debajo del otro */
+  text-align: center;/*  alinea el texto al medio */
   font-size: 1.8rem;
   color: var(--blanco);
 }
@@ -186,7 +186,6 @@ Puntos a considerar
 .widget-curso{
   border-bottom: 1px solid var(--gris);
   margin-bottom: 2rem;
-   
 }
 .widget-curso:last-of-type,
 .curso:last-of-type{
